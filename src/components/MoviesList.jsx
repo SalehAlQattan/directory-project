@@ -1,10 +1,21 @@
 // components
-import Movie from 'Movie'
+import Movie from './Movie'
+// data
+import movies from '../movies';
 
-const MoviesList = () => {
+const MoviesList = () => {  
+    const moviesList = movies.map(movie => {
+    return (
+      <Movie 
+        title={movie.title}
+        poster={movie.poster}
+        slug={movie.slug}
+      />
+    )
+  })
   return (
     <div>
-      <Movie />
+    {moviesList}
     </div>
   )
 }
