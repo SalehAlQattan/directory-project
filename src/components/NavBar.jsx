@@ -1,8 +1,12 @@
+// styles
+import { Navigation, HomeLink } from "../styles"
+
 const NavBar = () => {
   return (
-    <div>
-          
-    </div>
+    <Navigation>
+      <HomeLink exact to='/'>Home</HomeLink>
+      <HomeLink to='/movies'>Movies</HomeLink>
+    </Navigation>
   )
 }
 

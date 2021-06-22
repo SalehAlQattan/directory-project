@@ -7,6 +7,7 @@ import { Route, Switch } from 'react-router'
 import MoviesList from './components/MoviesList';
 import Home from './components/Home';
 import MovieDetails from './components/MovieDetails';
+import NavBar from './components/NavBar';
 
 const theme = {
   light: {
@@ -24,6 +25,7 @@ function App() {
     <div>
     <ThemeProvider theme={theme}>
     <GlobalStyle />
+    <NavBar />
     <Switch>
       <Route path='/' exact>
         <Home />

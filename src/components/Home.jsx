@@ -1,5 +1,7 @@
 // hooks
 import { useState } from 'react'
+// styles
+import { HomeContainer } from '../styles'
 
 const Home = () => {
   // time state
@@ -10,11 +12,11 @@ const Home = () => {
   // update time every second
   setTimeout(updateTime, 1000);
   return (
-    <div>
-      <h2>Welcom to the Movies Data Base</h2>
-      <h3>Its time to watch movies</h3>
-      <h3>{time}</h3>
-    </div>
+    <HomeContainer>
+      <h1>{time}</h1>
+      <h1>Welcom to the Movies Data Base</h1>
+      <h1>Its time to watch movies</h1>
+    </HomeContainer>
   )
 }
 
